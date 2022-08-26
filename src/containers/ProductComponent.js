@@ -4,10 +4,11 @@ import { useSelector } from "react-redux";
 const ProductComponent = () => {
   //useSelector is used to access the redux store from store.js
   const products = useSelector((state) => state.allProducts.products);
-  const { id, title, image, price, category } = products[0];
+  //const { id, title, image, price, category } = products[0];
 
   //rendering all the products
   const renderList = products.map((product) => {
+    const { id, title, image, price, category } = product;
     return (
       <div className="four column wide" key={id}>
         ProductComponent
