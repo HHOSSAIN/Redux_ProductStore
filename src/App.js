@@ -11,8 +11,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <br></br>
-      <h1>eCommerce Store</h1>
       <Router>
         <Switch>
           <Route path="/" exact component={ProductListing}></Route>
