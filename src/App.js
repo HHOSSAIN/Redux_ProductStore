@@ -10,7 +10,8 @@ import ProductDetail from "./containers/ProductDetail";
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/*}  <Header />
+      <br></br> */}
       <Router>
         <Switch>
           <Route path="/" exact component={ProductListing}></Route>

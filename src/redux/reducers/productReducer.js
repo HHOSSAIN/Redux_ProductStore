@@ -26,3 +26,13 @@ export const productReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+//new reducer for specific product
+export const selectedProductReducer = (state = {}, action) => {
+  switch (action.type) {
+    case ActionTypes.SELECTED_PRODUCT:
+      return { ...state, ...payload };
+    default:
+      return state;
+  }
+};
