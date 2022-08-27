@@ -1,7 +1,28 @@
-//importing the action constant names
-import { ActionTypes } from "../constants/actionTypes"
+import { ActionTypes } from "../constants/actionTypes";
 
-/*each of the function below is an action */
+export const setProducts = (products) => {
+  return {
+    type: ActionTypes.SET_PRODUCTS,
+    payload: products,
+  };
+};
+
+export const selectedProduct = (product) => {
+  return {
+    type: ActionTypes.SELECTED_PRODUCT,
+    payload: product,
+  };
+};
+export const removeSelectedProduct = () => {
+  return {
+    type: ActionTypes.REMOVE_SELECTED_PRODUCT,
+  };
+};
+
+//importing the action constant names
+/*import { ActionTypes } from "../constants/actionTypes"
+
+/each of the function below is an action /
 export const setProducts = (products) =>{
     return{
         type: ActionTypes.SET_PRODUCTS,
@@ -13,4 +34,4 @@ export const selectedProduct = (product) =>{
         type: ActionTypes.SELECTED_PRODUCT,
         payload: product //payload is the data
     }
-}
+} */
